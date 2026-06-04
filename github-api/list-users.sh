@@ -1,5 +1,16 @@
 #!/bin/bash
 
+#----------------------------
+#Author: Trivedi
+#Purpose: list the usersn who have access to the repository
+#Input: Export username, and token
+#-----------------------------
+
+
+helper()
+
+
+
 # GitHub API URL
 API_URL="https://api.github.com"
 
@@ -35,6 +46,19 @@ function list_users_with_read_access {
         echo "$collaborators"
     fi
 }
+
+
+function helper {
+	expected_cmd_args=2
+	if [ $# -ne $expected_cmd_args]; then 
+		echo "Please execute the script with required number of cmd arguments"
+		
+
+}
+
+
+
+
 
 # Main script
 
