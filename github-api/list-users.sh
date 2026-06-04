@@ -2,14 +2,12 @@
 
 #----------------------------
 #Author: Trivedi
-#Purpose: list the usersn who have access to the repository
+#Purpose: list the users who have access to the repository
 #Input: Export username, and token
 #-----------------------------
 
 
 helper()
-
-
 
 # GitHub API URL
 API_URL="https://api.github.com"
@@ -52,12 +50,8 @@ function helper {
 	expected_cmd_args=2
 	if [ $# -ne $expected_cmd_args]; then 
 		echo "Please execute the script with required number of cmd arguments"
-		
-
+	fi
 }
-
-
-
 
 
 # Main script
